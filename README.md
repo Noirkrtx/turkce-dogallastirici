@@ -1,78 +1,57 @@
 # Türkçe doğallaştırıcı
 
-Türkçe metindeki yapay zeka ve çeviri izini temizleyen bir **agent skill** ve onu destekleyen saf Python denetim kodları. Metnin türüne göre (kip) farklı davranır; sayıyı, birimi, terimi, atfı ve temkini kodla korur. Yöntem eşanlamlı kelime değiştirmek değil, cümle yapısını değiştirmektir.
+Yapay zekayla yazılmış Türkçe metin çoğu zaman tek bir kelimeden değil, cümlelerin kuruluşundan belli oluyor. Her yüklem "-mektedir" ile bitiyor, paragraflar "bu bağlamda" diye açılıyor, sonunda da her şeyi bir kez daha özetleyen bir cümle duruyor. Bu skill o izleri bulup metni yeniden yazdırıyor.
 
-Skill, [Agent Skills](https://agentskills.io) biçimindedir (`SKILL.md` + `scripts/` + `references/`). Claude Code, OpenAI Codex ve Hermes gibi bu biçimi okuyan ajanlarla çalışır; kodlar skill olmadan da tek başına kullanılabilir.
+Kısa bir örnek vereyim.
 
-## Ne yapar
+```text
+Önce:  Günümüzde yapay zekânın etkisi yadsınamaz. Ankette katılımcıların %62'si aracı
+       her gün kullandığını belirtmiş olup, bu durum dikkatli bir şekilde değerlendirilmelidir.
 
-Metnin kipini belirler, kalıp kataloğuna göre izleri bulur, yeniden yazar ve yeniden yazımın hiçbir korunan öğeyi bozmadığını kodla doğrular.
+Sonra: Ankete katılanların %62'si aracı her gün kullandığını söylüyor. Bu oranı yorumlarken
+       dikkatli olmak gerekiyor.
+```
 
-| Kip | Ne için | Kod eşiği (`dil_denetim.py`) |
+Yeniden yazımda en riskli şey anlamın kayması. Bu yüzden iş bitince bir kod eski metinle yenisini karşılaştırıyor. Bir sayı, birim ya da atıf değiştiyse, "olabilir" gibi bir temkin kelimesi düştüyse bunu hata olarak bildiriyor ve metin teslim edilmiyor. Yukarıdaki örnekte %62 yanlışlıkla %26 olsaydı kod bunu böyle bildirirdi.
+
+```text
+KORUMA İHLAL  ·  kip rapor  ·  HATA 2
+  HATA  [sayi-birim] 1 öğe kayboldu ya da değişti   - ('%62', '')
+  HATA  [sayi-birim] 1 yeni öğe eklendi              + ('%26', '')
+```
+
+Skill, [Agent Skills](https://agentskills.io) biçiminde yazıldı. Claude Code, Codex ve Hermes ile kullanılabiliyor. Denetim kodları saf Python, skill olmadan da tek başına çalışıyor.
+
+## Metnin türüne göre çalışıyor
+
+Bir postta düzeltilmesi gereken şey bir tezde doğru olabilir. Tezde "-mektedir" de edilgen çatı da temkinli dil de yerinde, oraya dokunmak metni bozar. Bu yüzden skill önce metnin türünü, yani kipini seçiyor.
+
+| Kip | Hangi metin için | Ne kadar dokunur |
 |---|---|---|
-| `post` | sosyal medya postu, yanıt; uzun yazı için `--tur uzun` | HATA 0, puan ≥85 (varsayılan) |
-| `rapor` | mesajla teslim edilen rapor, haftalık özet, okuma sürümü | HATA 0, puan ≥80 |
-| `ogretici` | okuma/çalışma metni, ders hazırlık metni | HATA 0, puan ≥75 |
-| `akademik` | Türkçe tez, makale, özet | yalnız HATA 0 (puan yok; ritim değiştirilmez) |
-| `sesli` | anlatıcı notu, konuşma kartı, TTS metni | HATA 0, puan ≥85 |
-| `telgraf` | vaka notu, slayt iskeleti, madde listesi | yalnız yazım/noktalama, kelime ±%5 |
+| `post` | sosyal medya postu, yanıt | en serbest; ritim, anons ve kapanış cümlesi düzeltilir |
+| `rapor` | mesajla gönderilen rapor, haftalık özet | açık ve kısa olsun diye yeniden kurar |
+| `ogretici` | ders notu, okuma metni | açıklamayı korur, tekrarı ve dolguyu atar |
+| `akademik` | tez, makale, özet | çok az; yalnız açık çeviri kalıpları ve yazım |
+| `sesli` | sunum notu, sesli okunacak metin | nefes yerleri, okunuşu yazılmamış kısaltmalar |
+| `telgraf` | madde listesi, slayt iskeleti | yalnız yazım ve noktalama |
 
-Ayrıntı: [`references/kip-matrisi.md`](references/kip-matrisi.md). Her kalıbın tanısı, örneği, düzeltmesi ve "dokunma" istisnası [`references/kalip-katalogu.md`](references/kalip-katalogu.md)'de.
+Kipler arasındaki farklar [`kip-matrisi.md`](references/kip-matrisi.md) dosyasında anlatılıyor. Her kalıbın örneği, nasıl düzeltileceği ve hangi durumda dokunulmayacağı da [`kalip-katalogu.md`](references/kalip-katalogu.md) dosyasında.
 
-**Korunanlar** (`scripts/koru.py` bayt bayt denetler, ihlalde çıkış kodu 1):
+## Neye dokunmuyor
 
-- **Sayı ve birim:** sayı birimiyle ve yakın terimiyle (`%62`, `0,1 mg/kg IV`, `Pplat 26 cmH2O`); µ/m ayrımı; `<`, `>`, `≤`, `≥` yönü; belirsiz sayıya (`1,500`) dokunulmaz.
-- **Terim, kısaltma, özel ad, sürüm:** `preprint`, `OR`, `%95 GA`, `Claude Code 2.1.317`.
-- **Atıf ve alıntı:** `[12]`, `(4,9)`, `(Yazar, 2024)`, DOI/PMID/URL, tırnak içi; cümle bölünürse atıf önermesiyle gider.
-- **Temkin ve iddia gücü:** "olabilir", "ilişkili", "düşündürüyor", "henüz" her önermede kalır; kaçınma yığılması teke iner, sıfıra inmez; öneri gücü (önerilir/önerilebilir) ve kılavuz sınıfı aynen kalır; göreli risk "X kat artırdı"ya çevrilmez.
-- **Şablon işaretleri:** `[TIK]`, `[SOR: …]`, `{{yer_tutucu}}`, `«»`, `<dfn>`, `[Kurum adı]`.
+Aşağıdakileri [`koru.py`](scripts/koru.py) kodu denetliyor.
 
-Tam liste: [`references/koruma-kurallari.md`](references/koruma-kurallari.md).
+- **Sayılar ve birimler.** `%62`, `0,1 mg/kg`, `2024-2026`; büyüktür ve küçüktür işaretlerinin yönü de dahil. "1,500" gibi binlik mi ondalık mı belli olmayan sayıya dokunulmaz, not düşülür.
+- **Terimler, kısaltmalar, özel adlar, sürüm numaraları.** `preprint`, `%95 GA`, `Claude Code 2.1.317`.
+- **Atıflar ve alıntılar.** `[12]`, `(Yazar, 2024)`, DOI, URL, tırnak içi. Cümle ikiye bölünürse atıf ait olduğu önermeyle birlikte gider.
+- **Temkin.** "olabilir", "ilişkili", "düşündürüyor", "henüz" yerinde kalır. Üst üste yığılmış temkin teke iner ama hiçbir zaman sıfıra inmez. "1,4 kat risk" de "riski artırdı"ya çevrilmez.
+- **Şablon işaretleri.** `{{yer_tutucu}}`, `[Kurum adı]` gibi doldurulacak alanlar.
 
-## Neyi yapmaz
+Tam liste [`koruma-kurallari.md`](references/koruma-kurallari.md) dosyasında.
 
-- **Tespitten kaçırma aracı değildir.** Amaç AI dedektörünü atlatmak değil, okunur ve doğal Türkçedir.
-- **Sadeleştirmez, içerik azaltmaz.** Terimi basitleştirmez, bilgi eklemez ya da çıkarmaz; kaynakta olmayan deneyim, özne, neden uydurmaz.
-- **Olgu hatasını düzeltmez,** raporlar.
-- **Zaten doğal metne dokunmaz** (ya da en az dokunur).
-- İngilizce metin, kod, tablo hücresi, kaynakça ve alıntı için değildir.
-- Kod her şeyi yakalamaz: terimin Türkçeleştirilmesi (agent → ajan), uydurma ayrıntı, konu izi model okuması ister.
+Bilerek yapmadıkları da var. Yapay zeka dedektörlerini atlatmak için yazılmadı, amaç okunur Türkçe. Metni sadeleştirmiyor, terimi basitleştirmiyor, kaynakta olmayan bir bilgi ya da deneyim eklemiyor. Metinde bir olgu hatası görürse düzeltmiyor, bildiriyor. Zaten doğal olan metne dokunmuyor. İngilizce metin, kod, tablo ve kaynakça için kullanılmamalı.
 
-## Hızlı örnek
-
-Önce (`--kip rapor`):
-
-```text
-Günümüzde yapay zekânın etkisi yadsınamaz. Ankette katılımcıların %62'si aracı her gün kullandığını belirtmiş olup, bu durum dikkatli bir şekilde değerlendirilmelidir.
-```
-
-```text
-KİP rapor  ·  PUAN 70/100  ·  elden geçir  ·  HATA 1  UYARI 5  BILGI 0
-[ai-abarti-sus] [ai-ifade] [cev-bir-sekilde] [cev-olup] [sapka-zeka]
-```
-
-Sonra:
-
-```text
-Ankete katılanların %62'si aracı her gün kullandığını söylüyor. Bu oranı yorumlarken dikkatli olmak gerekiyor.
-```
-
-```text
-KİP rapor  ·  PUAN 100/100  ·  teslime uygun  ·  HATA 0  UYARI 0  BILGI 0
-KORUMA GEÇTİ  ·  kip rapor  ·  HATA 0  UYARI 1  ·  kelime 20 > 14 (0.7)
-```
-
-Yeniden yazımda `%62` yanlışlıkla `%26` olsaydı:
-
-```text
-KORUMA İHLAL  ·  kip rapor  ·  HATA 2  UYARI 1  ·  kelime 20 > 14 (0.7)
-  HATA  [sayi-birim] 1 öğe kayboldu ya da değişti
-         - ('%62', '')
-  HATA  [sayi-birim] 1 yeni öğe eklendi
-         + ('%26', '')
-```
-
-(Bu çıktılar örnek metinler üzerinde kodun gerçek çıktısıdır.)
+Kodun yakalayamadığı şeyler de var. Uydurulmuş bir ayrıntıyı ya da bir terimin gereksiz yere Türkçeleştirilmesini (agent → ajan) ancak model okuyarak fark edebilir. Skill bu yüzden kod denetiminin yanında bir okuma adımı da istiyor.
 
 ## Adım adım kurulum
 
@@ -166,7 +145,7 @@ python3 evals/calistir.py V07 V13    # seçili vakalar
 
 20 vaka var (V01-V15; V07 altı alt vakaya bölünür): tanıtım postu, literatür postu, kullanıcının ham yanıtı, zaten doğal metin, ham rapor, öğretici metin, akademik metnin altı bölümü (giriş, genel bilgiler, yöntem, bulgular, tartışma, sonuç), anlatıcı notu, telgraf not, yanlış pozitif mesajlar, uzun yazı, TDK tuzakları, tıbbi/sayısal koruma, AI sözlüğü ve akademik muafiyet. Her vakada `girdi.txt`, beklenen `cikti_skill.txt` ve skill'siz tipik `cikti_temel.txt` kod ölçütleriyle sınanır; sonuç `evals/sonuclar/` altına yazılır.
 
-Bütün vaka metinleri **sentetiktir**: kurgu kişiler, kurgu çalışmalar ve uydurma ama gerçekçi sayılar içerir; gerçek bir yayına, kişiye ya da kuruma ait değildir. Beklenen çıktıları aynı proje yazdığı için "x/x geçti" bağımsız bir doğrulama değildir; anlam ölçütleri `evals/model_degerlendirme.yaml`'da ayrıca tutulur.
+Vaka metinlerinin hepsi kurgu. Kişiler, çalışmalar ve sayılar uydurma, gerçek bir yayına ya da kuruma ait değil. Beklenen çıktıları da bu repo yazdığı için "20/20 geçti" bağımsız bir doğrulama sayılmaz. Anlamla ilgili ölçütler ayrıca `evals/model_degerlendirme.yaml`'da tutuluyor.
 
 ## Teşekkür ve atıf
 
