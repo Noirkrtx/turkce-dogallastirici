@@ -87,7 +87,7 @@ V07c-tez-yontem:
     bilgi_eklendi_mi: hayır
     iddia_gucu_degisti_mi: hayır
     kip_korundu_mu: evet
-    alinti_not: 'Yalnız ''dahil'' → ''dâhil''; ''-mıştır'' raporlandı, dönüştürülmedi.'
+    alinti_not: 'Şapka eklenmedi; ''-mıştır'' raporlandı, dönüştürülmedi.'
   temel:
     iddia_gucu_degisti_mi: 'hayır'
     alinti_not: 'Bütün ''-mıştır'' yüklemleri ''-dı'' oldu (toplu dönüşüm, tez sahibinin kararı).'
