@@ -23,7 +23,7 @@ Kip işin başında belirlenir. Çağıran iş akışı verir (sosyal medya post
 | Edilgen | yığılınca İ | BİLGİ | BİLGİ | **M** | kim yaptı belli olsun |
 | Öznesiz yorum ("söylenebilir") | UYARI | UYARI | UYARI | UYARI | UYARI |
 | Noktalı virgül | BİLGİ | UYARI | BİLGİ | M | UYARI |
-| Şapka | yok (zekâ HATA) | yok | BİLGİ | **TDK zorunlu** | fark etmez |
+| Şapka | yok (zekâ HATA) | yok | yok | yok | yok |
 | Birinci tekil | M | M | dar | İ ("bu çalışmada") | M |
 | Cümle başı bağlaç | UYARI | UYARI | M | M ("Öncelikle/Sonuç olarak" BİLGİ) | UYARI |
 | Sıra sözü numaralama | İ | UYARI | UYARI | UYARI (D23) | M (ölçülü) |

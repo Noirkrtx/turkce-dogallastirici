@@ -36,9 +36,8 @@ Kaynak: TDK Yazım Kuralları sayfaları (tdk.gov.tr; madde kodları aşağıdak
 - **Saat** noktayla: "17.30'da" (akademik/rapor zorunlu; post esnek).
 - **Birleşik kelime:** ön yargı, yan etki, arka plan, alt grup ayrı; hissetmek, kaybolmak bitişik.
 
-## Şapka (kipe bağlı)
+## Şapka (hiçbir kipte yok)
 
 - post, rapor: şapkasız ("yapay zeka", "kağıt", "hikaye"); "zekâ" HATA; anlam ayıranlar (hâlâ, kâr, âdet) BİLGİ.
-- öğretici: şapkasız varsayılan, anlam ayıranlar serbest.
-- akademik: **TDK zorunlu** ("dâhil", "hâlâ", "resmî", "yapay zekâ").
+- öğretici, akademik, sesli: şapkasız ("dahil", "hala", "resmi", "yapay zeka"). Proje kararı: tez dahil hiçbir metinde şapka kullanılmaz; anlam ayıranlar (hâlâ, kâr) yalnız BİLGİ notu alır.
 - sesli: yazım fark etmez; "hala/hâlâ" karışmasın.

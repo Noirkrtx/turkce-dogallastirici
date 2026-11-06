@@ -53,24 +53,24 @@
    "post": "=",
    "rapor": "=",
    "ogretici": "=",
-   "akademik": "KAPALI",
-   "sesli": "KAPALI",
+   "akademik": "=",
+   "sesli": "=",
    "telgraf": "KAPALI"
   },
   "sapka-zeka": {
    "post": "=",
    "rapor": "=",
-   "ogretici": "BILGI",
-   "akademik": "KAPALI",
-   "sesli": "KAPALI",
+   "ogretici": "=",
+   "akademik": "=",
+   "sesli": "=",
    "telgraf": "KAPALI"
   },
   "sapka": {
    "post": "=",
    "rapor": "=",
-   "ogretici": "BILGI",
-   "akademik": "KAPALI",
-   "sesli": "KAPALI",
+   "ogretici": "=",
+   "akademik": "=",
+   "sesli": "=",
    "telgraf": "KAPALI"
   },
   "mektedir": {
@@ -996,13 +996,13 @@
    "kod": "aka-sapka",
    "aile": "AKADEMIK",
    "desen": "\\b(dahil|zeka)\\w*",
-   "aciklama": "akademikte TDK şapkası zorunlu",
+   "aciklama": "akademikte TDK şapkası zorunlu (kaldırıldı: hiçbir kipte şapka kullanılmaz)",
    "oneri": "'dâhil', 'zekâ' (akademikte TDK zorunlu)",
    "seviye": {
     "post": "KAPALI",
     "rapor": "KAPALI",
     "ogretici": "KAPALI",
-    "akademik": "BILGI",
+    "akademik": "KAPALI",
     "sesli": "KAPALI",
     "telgraf": "KAPALI"
    },

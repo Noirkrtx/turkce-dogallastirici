@@ -37,9 +37,9 @@ Toplam 60 kalıp (KAT-74…78 dış sözlükten eklendi). KAT-74 öncesi kip ba�
 - **Kod:** `sapka, sapka-zeka, sapka-gerekli`
 - **Tanı:** â, î, û içeren kelime.
 - **Örnek:** "Yapay zekâ araçlarını deniyorum"
-- **Düzeltme:** Post/rapor: 'zeka', 'kağıt'. Akademik: TDK zorunlu ('dâhil', bkz. KAT-66).
-- **Dokunma:** Anlam ayıranlar (hâlâ, kâr, âdet) BİLGİ; akademik metin.
-- **Kip / Şiddet:** post HATA (zekâ) / UYARI; rapor aynı; öğretici BİLGİ; akademik ve sesli kapalı
+- **Düzeltme:** Bütün kiplerde şapkasız: 'zeka', 'kağıt', 'dahil' (KAT-66).
+- **Dokunma:** Anlam ayıranlar (hâlâ, kâr, âdet) yalnız BİLGİ.
+- **Kip / Şiddet:** bütün kiplerde HATA (zekâ) / UYARI (diğerleri); telgraf kapalı
 - **Dayanak:** D1, 03 §8
 
 ## KAT-05 · -mektedir / -maktadır
@@ -447,14 +447,10 @@ Toplam 60 kalıp (KAT-74…78 dış sözlükten eklendi). KAT-74 öncesi kip ba�
 - **Kip / Şiddet:** akademik UYARI; diğer BİLGİ
 - **Dayanak:** akademik yazım rehberi ABR
 
-## KAT-66 · Akademik şapka
-- **Kod:** `aka-sapka`
-- **Tanı:** Akademikte 'dahil', 'zeka' şapkasız.
-- **Örnek:** "öğrenciler dahil edilmiştir" (V07c)
-- **Düzeltme:** 'dâhil', 'zekâ'.
-- **Dokunma:** Post, rapor (şapkasız ev kuralı).
-- **Kip / Şiddet:** akademik BİLGİ
-- **Dayanak:** 03 §8, TDK
+## KAT-66 · Akademik şapka (kaldırıldı)
+- **Kod:** `aka-sapka` (bütün kiplerde kapalı)
+- **Karar:** Tez dahil hiçbir metinde şapka kullanılmaz. Şapkalı yazım her kipte `sapka` / `sapka-zeka` kuralına düşer ('dâhil' → 'dahil', 'zekâ' → 'zeka').
+- **Uzun/orta çizgi:** tezde de yok; aralıklar kısa çizgiyle ("%95 GA 1,42-3,76", "2024-2026").
 
 ## KAT-67 · Yöntem/Bulgular'da -mıştır
 - **Kod:** `aka-mistir-bolum`
