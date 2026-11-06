@@ -1,0 +1,26 @@
+id: V08
+kip: sesli
+kaynak: 'sentetik; çevre kimyası dersi konuşmacı kartı (slayt 1-2)'
+beklenen: 'iç not (''Taslak ilk4 aktarım...'', ''prova ölçülmedi''), kod adı (''KT''), ''Vaka 23'', ''0: ... 1: ...'' yakalanır; yeniden yazımda birinci tekil, sınıfa hitap, [TIK]/[SOR] ile; pH 7,9 ve süreler korunur'
+kod:
+  koru: true
+  muaf:
+  - '4'
+  - '45'
+  - KT
+  - Linux
+  - '23'
+  - '0'
+  - '3'
+  - '2'
+  - Ders
+  - Vaka
+  - Kanıt
+  - Taslak
+  hata_max: 0
+  puan_min: 85
+  girdide_bulunmali:
+  - ses-ic-not
+  - ses-banka-vaka
+  - ses-kisaltma
+silinenler: 'iç not satırı (ilk4 aktarım, tam45dk/prova/Linux, hazırlık dosyası), ''KT geri hesabıyla değiştirilmez'' (iç kural), ''Vaka 23'' banka no, ''Ders 2''ye saklanmayacak'', ''0: 1: 2: 3:'' kare numaraları ([TIK] oldu), ''prova ölçülmedi'''

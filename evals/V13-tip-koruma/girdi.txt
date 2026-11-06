@@ -1,0 +1,4 @@
+Ketamin 0,1 mg/kg IV, en çok 5 mg verilir; noradrenalin 5 µg/kg/dk ile başlanır ve potasyum 4 mEq/L üzerinde tutulur.
+Erken başlanan tedavide mortalite odds oranı OR 2,3 (%95 GA 1,4-3,8; p=0,002) bulundu. NNT 12, RR 1,41.
+Kılavuz bu yaklaşımı Sınıf IIa, Düzey B kanıtla önerilebilir olarak sınıflıyor [12].
+Bu fark, erken tedavinin yararlı olabileceği düşünülebilir bir sinyaldir ve tek merkezli veride henüz doğrulanmadı.

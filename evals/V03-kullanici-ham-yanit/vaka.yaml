@@ -1,0 +1,17 @@
+id: V03
+kip: post
+kaynak: sentetik; kullanıcının yazım hatalı ham yanıt taslağı (ilk ve son satır talimat)
+beklenen: kullanıcının 3 ana cümlesi korunur (içerik sözcüğü örtüşmesi ≥%60), yazım düzelir, ≤280 karakter; İngilizce terimler
+  (context, summary) Türkçeleştirilmez
+kod:
+  koru: false
+  hata_max: 0
+  puan_min: 85
+  karakter_max: 280
+  ortusme_min: 0.6
+  ortusme_ref:
+  - uzun context verdiğimde modelin ilk kısımları unuttuğunu fark ettim
+  - her oturumun sonunda kısa bir summary yazdırıp yeni oturuma onu veriyorum
+  - şimdilik en çok işe yarayan yöntem bu
+not_: 'koru.py kullanılmaz: girdinin ilk ve son satırı modele talimat, çıktıya girmez; ölçüt içerik sözcüğü örtüşmesi.'
+yorum: 'belirsiz ifade yok; ''summary'' kullanıcının terimi olarak bırakıldı'

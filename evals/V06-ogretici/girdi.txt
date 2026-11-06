@@ -1,0 +1,5 @@
+Bir toprak örneği tartılıp 105 °C'de 24 saat kurutulursa içindeki serbest su buharlaşır ve geriye yalnız kuru kütle kalır. İki tartım arasındaki fark suyun kütlesidir ve kuru kütleye bölündüğünde <dfn>gravimetrik nem</dfn> («θg») elde edilir. Bu değer arazideki nem ölçümlerinin en güvenilir laboratuvar karşılığıdır.
+
+Toprak neminin tarla kapasitesinin %60'ı ya da üstünde tutulması sulama kılavuzlarının güçlü önerisidir ve uzun süreli bir buğday deneyinden gelir. Bu deneyde %60 eşiği, %40 eşiğine göre verim kaybını %24,6'dan %18,2'ye düşürdü; mutlak fark {{deney_fark}} puan, yani yaklaşık her {{deney_parsel}} parselde bir kayıp önlendi.
+
+Isınma için kanıt farklı türdendir. Bir araştırma grubu dokuz istasyonun uzun dönem kayıtlarını yeniden analiz etti ve yaz sıcaklığının kuraklıkla en güçlü ilişkili değişken olduğunu buldu: bir standart sapma (yaklaşık {{sicaklik_sd}} «°C») artış, kuraklık riskini 1,37 kat artırıyordu. Yağış ya da rüzgar değişiklikleri, ancak buharlaşmayı artırdıklarında kuraklıkla ilişkiliydi. Bu bir gözlemsel analizdir; ısınmayı tek başına sınayan bir deney henüz yoktur.

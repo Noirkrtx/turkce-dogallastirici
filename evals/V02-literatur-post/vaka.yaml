@@ -1,0 +1,15 @@
+id: V02
+kip: post
+kaynak: 'sentetik; uydurma bir preprint üzerine literatür postu (çalışma gerçek değildir)'
+beklenen: 'ayrıntı (künye, oran aralığı, örnek cümle) ilk yanıta; ana metinde ≤4 sayı (yıl dahil), ''preprint''; sayılar ana metin + yanıt toplamında korunur'
+kod:
+  koru: true
+  hata_max: 0
+  puan_min: 85
+  ana_sayi_max: 4
+  girdide_bulunmali:
+  - alan-on-baski
+  ayrac: === YANIT ===
+model_sorulari:
+- ana metin makale özeti gibi mi
+- iddia gücü değişti mi

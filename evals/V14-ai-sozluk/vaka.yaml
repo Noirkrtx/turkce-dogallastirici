@@ -1,0 +1,12 @@
+id: V14
+kip: rapor
+kaynak: 'sentetik; yucezerey/turkish-anti-ai-skill (MIT) sözlüğünden alınan kalıplar'
+beklenen: KAT-74..76 kalıpları rapor kipinde UYARI olarak yakalanır
+kod:
+  girdide_bulunmali:
+  - ai-abarti-sus
+  - ai-soylem-anons
+  - ai-burokratik-bag
+  - ai-negatif-paralel
+  - ai-pazarlama-ceviri
+  girdide_bulunmali_kip: rapor

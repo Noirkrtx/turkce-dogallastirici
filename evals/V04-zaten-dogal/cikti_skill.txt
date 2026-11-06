@@ -1,0 +1,3 @@
+Yeni bir kütüphaneyi denerken önce örnek klasörüne bakıyorum, belgeleri sonra okuyorum. Belgeler çoğu zaman olması gerekeni anlatıyor, örnekler ise gerçekten çalışanı gösteriyor. Geçen hafta bir tarih ayrıştırma kütüphanesinde bunu yine gördüm. Belgelerde anlatılan bir seçenek 14 örneğin hiçbirinde yoktu, denediğimde de hata verdi. Sürüm notlarına bakınca seçeneğin iki sürüm önce kaldırıldığı ortaya çıktı.
+
+Benim çıkarımım, belge ile örnek çeliştiğinde örneğe güvenmek gerektiği. Örnekler testlerle birlikte çalıştırılıyorsa bayatlamaları da daha zor.

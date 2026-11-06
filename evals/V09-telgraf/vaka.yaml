@@ -1,0 +1,11 @@
+id: V09
+kip: telgraf
+kaynak: 'sentetik; yazılım olay müdahale notu (telgraf biçimi)'
+beklenen: yalnız yazım/noktalama; kelime sayısı ±%5; yeni çıkarım yok
+kod:
+  koru: true
+  hata_max: 0
+  kelime_oran:
+  - 0.95
+  - 1.05
+  degisen_cumle_max: 1

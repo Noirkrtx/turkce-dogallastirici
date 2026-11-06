@@ -1,0 +1,15 @@
+id: V13
+kip: rapor+akademik+sesli
+kaynak: 'sentetik; tıbbi/sayısal koruma denetimi'
+beklenen: 'rapor/akademik: doz-birim-yol, OR/GA/p, NNT, RR, öneri gücü, atıf bayt bayt; sesli: okunuş tablosuyla eşit (atıf
+  okunmaz, UYARI); ''olabileceği düşünülebilir'' tek kaçınmaya iner ama temkin kalır; RR göreli kalır'
+kod:
+  koru: true
+  alt_kosular:
+  - kip: rapor
+  - kip: akademik
+  - kip: sesli
+  hata_max: 0
+  girdide_bulunmali:
+  - aka-kacinma-yigini
+  girdide_bulunmali_kip: akademik

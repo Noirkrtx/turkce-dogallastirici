@@ -1,0 +1,14 @@
+id: V05
+kip: rapor
+kaynak: sentetik; haftalık bağımlılık taraması raporu (ham sürüm)
+beklenen: '''betik'' → ''kod'', dosya yolu ve kart kimliği çıkar, hüküm ilk cümlede, orta tire gider, sayılar korunur'
+kod:
+  koru: true
+  muaf:
+  - R7
+  hata_max: 0
+  puan_min: 80
+  girdide_bulunmali:
+  - alan-betik
+  - en-dash
+  ilk_cumle_icerir: hemen güncellenmesi gereken paket yok

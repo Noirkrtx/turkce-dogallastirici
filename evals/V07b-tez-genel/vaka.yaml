@@ -1,0 +1,19 @@
+id: V07b
+kip: akademik
+bolum: genel
+kaynak: 'sentetik; eğitim bilimleri tezi taslağı, Genel bilgiler'
+beklenen: '''-e sahip'', ''dikkatli bir şekilde'', ''Bu durum'' düzelir; ''Ayrıca'' meşru bağlaç kalır; atıf (34) yerinde'
+kod:
+  koru: true
+  hata_max: 0
+  yasak_kurallar:
+  - cev-sahip
+  - cev-olup
+  - cev-bir-sekilde
+  - tdk-ve-virgul
+  - em-dash
+  - en-dash
+  - aka-kacinma-yigini
+  - ai-ifade:söz konusu
+  ritim_degismez: true
+olgu_notu: null

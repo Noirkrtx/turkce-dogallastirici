@@ -1,0 +1,14 @@
+id: V01
+kip: post
+kaynak: 'sentetik; hesap tanıtım taslağı'
+beklenen: ''':'' tanıtımı, ''zekâ'', kesik parça gider; uydurma yok; puan ≥85, HATA 0'
+kod:
+  koru: true
+  hata_max: 0
+  puan_min: 85
+  girdide_bulunmali:
+  - iki-nokta-tanitim
+  - sapka-zeka
+model_sorulari:
+- kaynakta olmayan özne/neden/deneyim eklendi mi
+- AI izleniminin ana kaynağı (yapı) giderildi mi

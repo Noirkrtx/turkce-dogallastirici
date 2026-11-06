@@ -1,0 +1,1 @@
+Uzun bir bağlam verdiğimde modelin baştaki bilgileri unuttuğunu fark ettim. Bu nedenle her oturumun sonunda kısa bir özet oluşturup yeni oturuma bu özeti aktarıyorum ve bu, şimdilik en etkili yöntem.

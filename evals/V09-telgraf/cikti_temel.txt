@@ -1,0 +1,5 @@
+Olay 4'te ödeme servisi yavaşlamıştır. Sistem 3 düğümden oluşmakta olup k8s 1.29 üzerinde çalışmaktadır; istek ortalaması 120/sn iken tepe değer 480/sn'ye ulaşmaktadır. Başlangıçta p95 gecikme 210 ms, hata oranı %0,4, bazal CPU %35 ve bellek 2,1 GB (Δ 0,3) değerindedir.
+
+Birinci bölümde, yayından sonraki 3. saatte ve yedek düğüm bulunmazken p95 gecikme 210 ms'den 1900 ms'ye çıkar, CPU %92'ye ulaşır ve DB bağlantı sayısı 40'tan 200'e yükselir; bu durum bağlantı havuzunun dolduğunu gösterir. Sürüm geri alınıp servis yeniden başlatıldığında düzelme olmaz. Bağlantı sızıntısı olduğu düşünülerek eski istemci sürümü geri yüklenince p95 260 ms'ye iner ve hata oranı %0,5 olur (O).
+
+İkinci bölümde, 6. saatte önbellek temizlendikten sonra hata oranı %12, p95 2400 ms ve CPU %40'tır; ikisinin ayrışması dış bağımlılığa işaret eder. DNS çözümleme 3 sn sürer ve yeniden başlatma sorunu çözmez. Bu tablo sağlayıcı kesintisini (P) düşündürür; yedek çözücüye geçilir ve sağlayıcıya bildirim yapılır. Yeniden başlatınca düzelseydi bellek sızıntısı (S) düşünülürdü (Runbook s.12).

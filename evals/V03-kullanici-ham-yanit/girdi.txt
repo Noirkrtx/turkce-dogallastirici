@@ -1,0 +1,5 @@
+şunu biraz toparlar mısın yanıt olarak
+ben uzun context verdiğimde modelin ilk kısımları unutuduğunu farkettim.
+o yüzden her oturumun sonunda kısa bir summary yazdırıp yeni oturuma onu veriyorum.
+şimdilik en çok işe yarayan yöntem bu
+çok uzatmadan doğal bir dille yazarsan iyi olur

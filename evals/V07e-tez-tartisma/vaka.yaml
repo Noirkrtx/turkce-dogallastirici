@@ -1,0 +1,18 @@
+id: V07e
+kip: akademik
+bolum: tartisma
+kaynak: 'sentetik; eğitim bilimleri tezi taslağı, Tartışma'
+beklenen: '''-mektedir'' yığılması seyrelir (yerleşik bilgi ''-mektedir'' kalabilir), ''söz konusu'' ve cümle başı ''Yani'' düzelir; son cümledeki temkin (''sınırlamış olabilir'') kalır; 24/15/1/18 birebir'
+kod:
+  koru: true
+  hata_max: 0
+  yasak_kurallar:
+  - cev-sahip
+  - cev-olup
+  - cev-bir-sekilde
+  - tdk-ve-virgul
+  - em-dash
+  - en-dash
+  - aka-kacinma-yigini
+  - ai-ifade:söz konusu
+  ritim_degismez: true

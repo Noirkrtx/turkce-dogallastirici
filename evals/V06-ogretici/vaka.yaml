@@ -1,0 +1,15 @@
+id: V06
+kip: ogretici
+kaynak: 'sentetik; çevre bilimi okuma metni (toprak nemi ve kuraklık)'
+beklenen: '''ve'' zinciri ve ''Bu ...'' açılışları kırılır; cümle ort. 12-20; terim ilk kullanımda tanımlı kalır; «» <dfn> {{}} korunur; olgu notu: ''1,37 kat artırıyordu'' düzeltilmez, raporda not edilir'
+kod:
+  koru: true
+  hata_max: 0
+  puan_min: 75
+  kelime_oran:
+  - 0.85
+  - 1.1
+  ort_kelime:
+  - 12
+  - 20
+olgu_notu: '''kuraklık riskini 1,37 kat artırıyordu'' RR 1,37 için yanlış anlatım (doğrusu ''1,37 katına çıkarıyordu'' ya da ''%37 artırıyordu''); kaynakta düzeltilmedi, kullanıcıya not.'

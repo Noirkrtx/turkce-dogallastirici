@@ -1,0 +1,1 @@
+Uzun context verdiğimde modelin ilk kısımları unuttuğunu fark ettim. O yüzden her oturumun sonunda kısa bir summary yazdırıp yeni oturuma onu veriyorum. Şimdilik en çok işe yarayan yöntem bu.

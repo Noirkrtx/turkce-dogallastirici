@@ -1,0 +1,10 @@
+id: V04
+kip: post
+kaynak: 'sentetik; zaten doğal bir post'
+beklenen: değişiklik ≤2 cümle; puan düşmez
+kod:
+  koru: true
+  hata_max: 0
+  puan_min: 85
+  degisen_cumle_max: 2
+  puan_dusmez: true

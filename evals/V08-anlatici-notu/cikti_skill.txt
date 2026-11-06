@@ -1,0 +1,7 @@
+# Canlı konuşmacı kartları
+
+## 1
+   Hedef:  Ölçüm ile yorumu ayırmak.   Şimdi söyle:  Bugün ölçümden çok, ölçümü nasıl okuduğumuza birlikte bakacağız.   Sor / bekle:  [SOR: Bir cümlenin hangi kısmı ölçüm, hangisi yorum?] [BEKLE] Bir gönüllüden kısa bir yanıt alalım.   Sonuç / köprü:  Birazdan önce eksik ölçümü fark edeceğiz.   Süre:  Bir dakika, düşünme ve geçiş dahil.
+
+## 2
+   Hedef:  Yalnız pe ha'ya bakarak yorumun bitmediğini görmek.   Şimdi söyle:  İlk karede yalnız pe ha var. [TIK] Şimdi karbondioksiti ve sıcaklığı açıyorum. [TIK] Sonra yanıtı, [TIK] en son da gerekçeyi gösteriyorum. Bu göl örneğinde pe ha yedi virgül dokuz, bu değeri değiştirmiyoruz.   Sor / bekle:  [SOR: Hangi veriyi görmek istersiniz? Sonuç ya da çözüm istemeyin.] [BEKLE] Yirmi saniye veriyorum.   Sonuç / köprü:  Nötre yakın bir pe ha tamponun olmadığı anlamına gelmez, karbonat tamponu da pe ha'yı nötr aralıkta tutabilir. Yani yalnız pe ha yetmez. Bu örneğin ileri çözümüne birinci derste döneceğiz.   Süre:  İki dakika, düşünme ve geçiş dahil.

@@ -1,0 +1,7 @@
+Kod asistanına test yazdırdığında testlerin geçmesi, kodun doğru olduğu anlamına her zaman gelmiyor. Bu yıl arXiv'e konan bir preprint bunu açık ağırlıklı kod modellerinde sınamış. Modele hatalı bir fonksiyon veriliyor ve bunun için birim testi yazması isteniyor, sonra testin hatayı yakalayıp yakalamadığına bakılıyor.
+
+Bana en ilginç gelen kısım bir ayrım oldu. Modele önce kodu açıklatıp sonra test yazdırınca hataların yüzde 60'tan fazlası yakalanıyor, doğrudan test istenince yüzde 25'in altında kalıyor. Yani hatayı görme becerisi var ama kendiliğinden devreye girmiyor.
+
+Ben buradan şunu çıkarıyorum. Asistana test yazdırmadan önce kodu kendi cümleleriyle anlatmasını iste, testlerin yeşil yanması tek başına kodun doğru olduğunu söylemiyor.
+=== YANIT ===
+Çalışma Eylül 2026'da arXiv'e konan tek yazarlı bir preprint. Altı aileden 14 açık ağırlıklı kod modeli sınanıyor. Test istenirken verilen açıklamaya örnek "bu fonksiyon iki tarih arasındaki gün sayısını döndürür" cümlesi. Yakalama oranı modele göre yüzde 20 ile 70 arasında değişiyor ve model boyutundan çok eğitim verisine bağlı görünüyor. Aynı düzenekte en büyük model doğrudan istemde hatayı bir kez bile yakalamamış. 2024'te yapılan benzer bir çalışmada modeller hatalı kodu neredeyse her zaman doğru kabul ediyordu, düzenekler aynı değil ama yön ilginç. Sınırı da var. Yalnız Python fonksiyonları ve kısa görevler kapsanıyor. Büyük kod tabanlarında düşünme biçimi farklı olabilir, onlar bu testte yok.

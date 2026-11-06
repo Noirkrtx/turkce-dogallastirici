@@ -1,0 +1,177 @@
+# Model okuması: kodla ölçülmeyen anlam ölçütleri. Değerlendiren, vakaları yazan modeldir;
+# bağımsız değerlendirme değildir (bkz. SKILL.md › Verification).
+
+V01-tanitim:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: ''':'' tanıtımı ''adıyla yazacağım'' cümlesine açıldı; ''Bazen, kısa, satranç'' kesik parçası düz cümle oldu; ''zekâ'' → ''zeka''.'
+  temel:
+    iddia_gucu_degisti_mi: 'hayır'
+    alinti_not: '''bir dil bilgisi kuralı paylaşacağım: Günün Kuralı'' anons iki noktası ve ''zekâ'' şapkası kaldı.'
+V02-literatur-post:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: 'Künye, oran aralığı ve örnek cümle ilk yanıta taşındı; ana metinde 2 oran kaldı; ''ön baskı'' → ''preprint''.'
+  temel:
+    iddia_gucu_degisti_mi: 'hafif: ''Pratik çıkarım:'' kaynakta ''benim yorumum'' diye sınırlanmıştı'
+    alinti_not: '''ön baskı'' kaldı, ayrıntı ana metinde, ''En dikkat çekici bulgu ise şu:'' anonsu eklendi; ''benim yorumum'' sınırı kalktı.'
+V03-kullanici-ham-yanit:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: 'Kullanıcının kelimeleri (context, summary, ''en çok işe yarayan'') korundu, yalnız yazım düzeldi.'
+  temel:
+    iddia_gucu_degisti_mi: 'hafif'
+    alinti_not: 'Terimler Türkçeleştirildi (bağlam, özet); ''en etkili yöntem'' iddiayı güçlendirdi. Kod ölçütü terim çevirisini yakalamıyor (kör nokta).'
+V04-zaten-dogal:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: 'Zaten doğal metin olduğu gibi bırakıldı.'
+  temel:
+    iddia_gucu_degisti_mi: 'hafif'
+    alinti_not: 'Soru açılışı ve ''Benim çıkarımım şu:'' anonsu eklendi; ''çok daha zor'' iddiayı büyüttü.'
+V05-ham-rapor:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: 'Hüküm ilk cümlede, ''betik'' → ''kod'', dosya yolu ve kart kimliği çıktı, orta tire kısa çizgi oldu.'
+  temel:
+    iddia_gucu_degisti_mi: 'hayır'
+    alinti_not: '''betik'' ve orta tire kaldı, hüküm üçüncü satırda; ''acilen'' sözü eklendi.'
+V06-ogretici:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: '''ve'' zinciri bölündü, terim tanımı <dfn> ile kaldı; ''1,37 kat artırıyordu'' olgu hatası düzeltilmedi, not edildi.'
+  temel:
+    iddia_gucu_degisti_mi: 'temel: evet (kapanış cümlesi eklendi)'
+    alinti_not: '''büyük önem taşır'' kapanışı eklendi (bilgi ekleme), ''1,37 kat'' → ''%37'' sessizce düzeltildi.'
+V07a-tez-giris:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: '''-miş olup'' → ''-mıştır ve'', ''potansiyeline sahip olup'' → ''-abilir ve''; temkin ve atıflar yerinde.'
+  temel:
+    iddia_gucu_degisti_mi: 'temel: evet'
+    alinti_not: 'Cümle bölündü (ritim değişti), ''Çalışmamızda'' ve ''amaçladık'' akademik kipten çıktı; ''-abilir'' temkini ''sağlar'' ile kalktı.'
+V07b-tez-genel:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: '''-e sahip'', ''dikkatli bir şekilde'', ''Bu durum'' düzeldi; ''Ayrıca'' kaldı.'
+  temel:
+    iddia_gucu_degisti_mi: 'hayır'
+    alinti_not: 'Kalıplar olduğu gibi kaldı.'
+V07c-tez-yontem:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: 'Yalnız ''dahil'' → ''dâhil''; ''-mıştır'' raporlandı, dönüştürülmedi.'
+  temel:
+    iddia_gucu_degisti_mi: 'hayır'
+    alinti_not: 'Bütün ''-mıştır'' yüklemleri ''-dı'' oldu (toplu dönüşüm, tez sahibinin kararı).'
+V07d-tez-bulgular:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: 'Metne dokunulmadı.'
+  temel:
+    iddia_gucu_degisti_mi: 'temel: evet (odds → risk)'
+    alinti_not: 'Ondalık nokta, ÇAA aralıkları ve p değerleri düştü; OR ''kat artırdı'' anlatımına çevrildi.'
+V07e-tez-tartisma:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: 'Bulgu cümleleri ''-mıştır'', yerleşik bilgi ''-mektedir'' kaldı; ''Söz konusu'' ve ''Yani'' düzeldi; ''sınırlamış olabilir'' temkini kaldı.'
+  temel:
+    iddia_gucu_degisti_mi: 'temel: evet'
+    alinti_not: '''göstermektedir'' ve ''sınırlamaktadır'' temkini kaldırdı; atıf (18) düştü.'
+V07f-tez-sonuc:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: 'Metne dokunulmadı; ''-malıdır'' ve ''ihtiyatla yorumlanmalıdır'' Sonuç bölümünde meşru.'
+  temel:
+    iddia_gucu_degisti_mi: 'temel: evet'
+    alinti_not: '''ilişkilidir'' → ''yol açmaktadır'' (nedensellik), ''yardımcı olabilir'' → ''sağlar'' (temkin kalktı).'
+V08-anlatici-notu:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: 'İç not, kod adı ve banka vaka numarası silindi (muaf); kare numaraları [TIK] oldu; sınıfa hitap ve okunuşlar tablodan.'
+  temel:
+    iddia_gucu_degisti_mi: 'hayır'
+    alinti_not: 'İç not ve kod adı kaldı, okunuş yazılmadı.'
+V09-telgraf:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: 'Yalnız ''s.30'' → ''s. 30''; kelime sayısı aynı.'
+  temel:
+    iddia_gucu_degisti_mi: 'temel: evet (çıkarım cümleleri eklendi)'
+    alinti_not: 'Telgraf not düzyazıya açıldı; ''-mekte olup'' ve ''bu durum'' eklendi, kelime sayısı arttı.'
+V11-uzun-yazi:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: '''-mış'' anlatı kipi tutarlı, ''-maktadır'' ve ''Sonuç olarak'' gitti.'
+  temel:
+    iddia_gucu_degisti_mi: 'temel: evet'
+    alinti_not: '''çığır açan vizyon'', ''ne yazık ki'' eklendi; iki nokta ile vuruş kuruldu.'
+V12-tdk-tuzak:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: 'Metne dokunulmadı; ''1,500'' için tdk-belirsiz-sayi BİLGİ notu düştü.'
+  temel:
+    iddia_gucu_degisti_mi: 'temel: evet'
+    alinti_not: '''1,500'' → ''1.500'' tek yoruma bağlandı, ''Bir takım kurduk'' → ''Birtakım kurduk'' anlamı bozuldu, ''Ali...'' silindi.'
+V13-tip-koruma:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    bilgi_eklendi_mi: hayır
+    iddia_gucu_degisti_mi: hayır
+    kip_korundu_mu: evet
+    alinti_not: 'Rapor/akademik: kümeler bayt bayt; ''olabileceği düşünülebilir'' → ''olabileceğini düşündüren'' (tek kaçınma, temkin kaldı). Sesli: okunuş tablosuyla eşit, atıf okunmadı (UYARI).'
+  temel:
+    iddia_gucu_degisti_mi: 'temel: evet'
+    alinti_not: 'OR ''ölüm riskini 2,3 kat artırdı'' oldu, ''yararlı olduğunu gösteriyor'' temkini kaldırdı, ''önerilebilir'' → ''önermektedir'', µg → mg.'
+V10-yanlis-pozitif:
+  degerlendiren: vakaları yazan model (bağımsız değil)
+  skill:
+    alinti_not: '10 ham mesajda AI izi HATA''sı yok; ''herşeyi'' (TDK-B8) ve ''betik'' (alan sözlüğü, kelimenin anıldığı meta kullanım) yazım listesine düştü. Meta kullanım yanlış pozitif sayılır, kurala istisna eklenmedi.'

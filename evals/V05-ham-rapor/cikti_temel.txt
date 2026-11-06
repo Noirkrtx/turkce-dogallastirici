@@ -1,0 +1,12 @@
+🔎 Bağımlılık taraması · 24 Ekim 2026 (haftalık, 3 depo)
+Sayaç: 3 depo · 214 paket tarandı · 19 güncelleme var · 4 güvenlik notu · 0 kritik · durum TAMAM
+
+Tespit edilen 4 güvenlik notunun tamamı düşük önem düzeyindedir; bu hafta hemen güncellenmesi gereken bir paket bulunmuyor.
+
+1) yaml-okur 5.1 → 6.0 · ana sürüm · uyum puanı 46/100 (eşik 50)
+Takıldığı yer: tek bakımcı (41/41 commit, depo 12 Ekim'de taşınmış); yeni sürümde varsayılan kodlama değişmiş (testlerin %18'i etkileniyor).
+Maliyet: CI süresi ~3–4 dk/koşu artıyor, aylık ~€3–6 ek (tahmini).
+
+csv-araci gerekçesi (kart R7): Lisansı açık; ancak kurulum root yetkisiyle uzaktan çekilen bir betikle yapılıyor.
+
+Tam rapor: rapor/2026-10-24.md

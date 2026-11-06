@@ -1,0 +1,1302 @@
+{
+ "aciklama": "Kural x kip seviye tablosu. dil_denetim.py okur. 'eski': mevcut post kurallarının kip başına eylemi ('=' aynen, '<UYARI' tavan, seviye ata, KAPALI). 'yeni': kalıp aileleri; desen 'OZEL' ise kodda, 'HAM:' ile başlarsa maskesiz metinde aranır.",
+ "kipler": [
+  "post",
+  "rapor",
+  "ogretici",
+  "akademik",
+  "sesli",
+  "telgraf"
+ ],
+ "eski": {
+  "iki-nokta": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "<BILGI",
+   "akademik": "KAPALI",
+   "sesli": "=",
+   "telgraf": "KAPALI"
+  },
+  "iki-nokta-tanitim": {
+   "post": "=",
+   "rapor": "UYARI",
+   "ogretici": "UYARI",
+   "akademik": "KAPALI",
+   "sesli": "UYARI",
+   "telgraf": "KAPALI"
+  },
+  "em-dash": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "=",
+   "akademik": "=",
+   "sesli": "=",
+   "telgraf": "="
+  },
+  "en-dash": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "=",
+   "akademik": "=",
+   "sesli": "=",
+   "telgraf": "="
+  },
+  "tire-ara": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "=",
+   "akademik": "=",
+   "sesli": "=",
+   "telgraf": "="
+  },
+  "sapka-gerekli": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "=",
+   "akademik": "KAPALI",
+   "sesli": "KAPALI",
+   "telgraf": "KAPALI"
+  },
+  "sapka-zeka": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "BILGI",
+   "akademik": "KAPALI",
+   "sesli": "KAPALI",
+   "telgraf": "KAPALI"
+  },
+  "sapka": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "BILGI",
+   "akademik": "KAPALI",
+   "sesli": "KAPALI",
+   "telgraf": "KAPALI"
+  },
+  "mektedir": {
+   "post": "=",
+   "rapor": "UYARI",
+   "ogretici": "UYARI",
+   "akademik": "KAPALI",
+   "sesli": "HATA",
+   "telgraf": "KAPALI"
+  },
+  "mistir": {
+   "post": "=",
+   "rapor": "UYARI",
+   "ogretici": "BILGI",
+   "akademik": "KAPALI",
+   "sesli": "UYARI",
+   "telgraf": "KAPALI"
+  },
+  "ai-ifade": {
+   "post": "=",
+   "rapor": "<UYARI",
+   "ogretici": "<UYARI",
+   "akademik": "<UYARI",
+   "sesli": "<UYARI",
+   "telgraf": "KAPALI"
+  },
+  "kalin-unicode": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "=",
+   "akademik": "=",
+   "sesli": "=",
+   "telgraf": "="
+  },
+  "noktali-virgul": {
+   "post": "=",
+   "rapor": "UYARI",
+   "ogretici": "BILGI",
+   "akademik": "KAPALI",
+   "sesli": "UYARI",
+   "telgraf": "KAPALI"
+  },
+  "kesik-parca": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "BILGI",
+   "akademik": "KAPALI",
+   "sesli": "=",
+   "telgraf": "KAPALI"
+  },
+  "uclu-liste": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "BILGI",
+   "akademik": "BILGI",
+   "sesli": "=",
+   "telgraf": "KAPALI"
+  },
+  "tekrar": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "BILGI",
+   "akademik": "BILGI",
+   "sesli": "=",
+   "telgraf": "KAPALI"
+  },
+  "emoji": {
+   "post": "=",
+   "rapor": "BILGI",
+   "ogretici": "=",
+   "akademik": "=",
+   "sesli": "=",
+   "telgraf": "KAPALI"
+  },
+  "soru-cevap": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "KAPALI",
+   "akademik": "=",
+   "sesli": "KAPALI",
+   "telgraf": "KAPALI"
+  },
+  "baglac-acilis": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "KAPALI",
+   "akademik": "KAPALI",
+   "sesli": "=",
+   "telgraf": "KAPALI"
+  },
+  "acilis-tekrar": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "BILGI",
+   "akademik": "BILGI",
+   "sesli": "=",
+   "telgraf": "KAPALI"
+  },
+  "son-kafiye": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "BILGI",
+   "akademik": "KAPALI",
+   "sesli": "=",
+   "telgraf": "KAPALI"
+  },
+  "kesik-yigin": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "=",
+   "akademik": "KAPALI",
+   "sesli": "=",
+   "telgraf": "KAPALI"
+  },
+  "tekduze-ritim": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "=",
+   "akademik": "KAPALI",
+   "sesli": "=",
+   "telgraf": "KAPALI"
+  },
+  "vurucu-kapanis": {
+   "post": "=",
+   "rapor": "=",
+   "ogretici": "BILGI",
+   "akademik": "KAPALI",
+   "sesli": "=",
+   "telgraf": "KAPALI"
+  },
+  "uzun-cumle": {
+   "post": "=",
+   "rapor": "KAPALI",
+   "ogretici": "KAPALI",
+   "akademik": "KAPALI",
+   "sesli": "KAPALI",
+   "telgraf": "KAPALI"
+  },
+  "madde-liste": {
+   "post": "=",
+   "rapor": "KAPALI",
+   "ogretici": "KAPALI",
+   "akademik": "KAPALI",
+   "sesli": "KAPALI",
+   "telgraf": "KAPALI"
+  },
+  "okunabilirlik": {
+   "post": "=",
+   "rapor": "KAPALI",
+   "ogretici": "KAPALI",
+   "akademik": "KAPALI",
+   "sesli": "KAPALI",
+   "telgraf": "KAPALI"
+  }
+ },
+ "yeni": [
+  {
+   "kod": "tdk-ve-virgul",
+   "aile": "TDK",
+   "desen": ",\\s+(ve|veya|yahut)\\s",
+   "aciklama": "'ve/veya/yahut' öncesi virgül",
+   "oneri": "virgülü sil (TDK: bu bağlaçlardan önce de sonra da virgül konmaz)",
+   "seviye": {
+    "post": "HATA",
+    "rapor": "HATA",
+    "ogretici": "HATA",
+    "akademik": "HATA",
+    "sesli": "HATA",
+    "telgraf": "HATA"
+   },
+   "kaynak": "TDK-V1, proje kararı",
+   "katalog": "KAT-40"
+  },
+  {
+   "kod": "tdk-hem-hem",
+   "aile": "TDK",
+   "desen": "\\bhem\\b[^.;]*,\\s*hem\\b",
+   "aciklama": "'hem ... , hem' arasında virgül",
+   "oneri": "virgülü sil",
+   "seviye": {
+    "post": "UYARI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "UYARI",
+    "sesli": "UYARI",
+    "telgraf": "UYARI"
+   },
+   "kaynak": "TDK-V2",
+   "katalog": "KAT-41"
+  },
+  {
+   "kod": "tdk-yuzde",
+   "aile": "TDK",
+   "desen": "\\d ?%(?!\\d)|%\\s+\\d",
+   "aciklama": "yüzde işareti sayıdan sonra ya da boşluklu",
+   "oneri": "%25 biçimi: işaret önde, bitişik",
+   "seviye": {
+    "post": "HATA",
+    "rapor": "HATA",
+    "ogretici": "HATA",
+    "akademik": "HATA",
+    "sesli": "HATA",
+    "telgraf": "HATA"
+   },
+   "kaynak": "TDK-S2",
+   "katalog": "KAT-42"
+  },
+  {
+   "kod": "tdk-belirsiz-sayi",
+   "aile": "TDK",
+   "desen": "(?<![\\d,.])[1-9]\\d{0,2},\\d{3}(?![\\d,])",
+   "aciklama": "belirsiz sayı (binlik mi ondalık mı?)",
+   "oneri": "dokunma; raporda not düş (1,500 = 1.500 mü 1,5 mi?)",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "BILGI",
+    "sesli": "BILGI",
+    "telgraf": "BILGI"
+   },
+   "kaynak": "NOK-03, 05 §3 madde 2",
+   "katalog": "KAT-47"
+  },
+  {
+   "kod": "tdk-ondalik-nokta",
+   "aile": "TDK",
+   "desen": "OZEL",
+   "aciklama": "ondalık nokta",
+   "oneri": "Türkçede ondalık virgül (15,2); sürüm, saat, bölüm no hariç",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "UYARI",
+    "sesli": "UYARI",
+    "telgraf": "UYARI"
+   },
+   "kaynak": "TDK-S3, V10",
+   "katalog": "KAT-43"
+  },
+  {
+   "kod": "tdk-yada",
+   "aile": "TDK",
+   "desen": "\\byada\\b",
+   "aciklama": "'yada' bitişik",
+   "oneri": "'ya da' ayrı",
+   "seviye": {
+    "post": "HATA",
+    "rapor": "HATA",
+    "ogretici": "HATA",
+    "akademik": "HATA",
+    "sesli": "HATA",
+    "telgraf": "HATA"
+   },
+   "kaynak": "TDK-B1",
+   "katalog": "KAT-44"
+  },
+  {
+   "kod": "tdk-belirsizlik-bitisik",
+   "aile": "TDK",
+   "desen": "\\b(bir çok|bir kaç|hiç bir|her hangi)\\b",
+   "aciklama": "belirsizlik sözü ayrı yazılmış",
+   "oneri": "birçok, birkaç, hiçbir, herhangi (bitişik)",
+   "seviye": {
+    "post": "HATA",
+    "rapor": "HATA",
+    "ogretici": "HATA",
+    "akademik": "HATA",
+    "sesli": "HATA",
+    "telgraf": "HATA"
+   },
+   "kaynak": "TDK-B7",
+   "katalog": "KAT-44"
+  },
+  {
+   "kod": "tdk-bir-takim",
+   "aile": "TDK",
+   "desen": "\\bbir takım\\b",
+   "aciklama": "'bir takım': belirsizlik anlamındaysa 'birtakım'",
+   "oneri": "sayı + ad ise ('bir takım kurduk') doğru, dokunma",
+   "seviye": {
+    "post": "UYARI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "UYARI",
+    "sesli": "UYARI",
+    "telgraf": "UYARI"
+   },
+   "kaynak": "TDK-B7 (06 düzeltmesi)",
+   "katalog": "KAT-44"
+  },
+  {
+   "kod": "tdk-sey-bitisik",
+   "aile": "TDK",
+   "desen": "\\b(birşey|herşey|herbiri|hiçkimse)\\w*",
+   "aciklama": "'bir şey/her şey' bitişik",
+   "oneri": "ayrı yaz",
+   "seviye": {
+    "post": "HATA",
+    "rapor": "HATA",
+    "ogretici": "HATA",
+    "akademik": "HATA",
+    "sesli": "HATA",
+    "telgraf": "HATA"
+   },
+   "kaynak": "TDK-B8",
+   "katalog": "KAT-44"
+  },
+  {
+   "kod": "tdk-isbirligi",
+   "aile": "TDK",
+   "desen": "\\bişbirliğ\\w*|\\bişbirliği\\w*",
+   "aciklama": "'işbirliği' bitişik",
+   "oneri": "'iş birliği'",
+   "seviye": {
+    "post": "HATA",
+    "rapor": "HATA",
+    "ogretici": "HATA",
+    "akademik": "HATA",
+    "sesli": "HATA",
+    "telgraf": "HATA"
+   },
+   "kaynak": "TDK-B12",
+   "katalog": "KAT-44"
+  },
+  {
+   "kod": "tdk-ki-bitisik",
+   "aile": "TDK",
+   "desen": "\\b(demek|bilmem|kaldı|yeter)ki\\b",
+   "aciklama": "bağlaç 'ki' bitişik",
+   "oneri": "ayrı yaz: 'demek ki'",
+   "seviye": {
+    "post": "HATA",
+    "rapor": "HATA",
+    "ogretici": "HATA",
+    "akademik": "HATA",
+    "sesli": "HATA",
+    "telgraf": "HATA"
+   },
+   "kaynak": "TDK-B3",
+   "katalog": "KAT-44"
+  },
+  {
+   "kod": "tdk-oysa-ki",
+   "aile": "TDK",
+   "desen": "\\boysa ki\\b",
+   "aciklama": "'oysa ki'",
+   "oneri": "'oysaki' bitişik",
+   "seviye": {
+    "post": "BILGI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "BILGI",
+    "sesli": "BILGI",
+    "telgraf": "BILGI"
+   },
+   "kaynak": "TDK-B4",
+   "katalog": "KAT-44"
+  },
+  {
+   "kod": "tdk-tirnak-kesme",
+   "aile": "TDK",
+   "desen": "HAM:[”\\\"]['’][a-zçğıöşü]",
+   "aciklama": "tırnaktan sonra kesme",
+   "oneri": "tırnaktan sonra gelen ek kesmesiz",
+   "seviye": {
+    "post": "HATA",
+    "rapor": "HATA",
+    "ogretici": "HATA",
+    "akademik": "HATA",
+    "sesli": "HATA",
+    "telgraf": "HATA"
+   },
+   "kaynak": "TDK-T3",
+   "katalog": "KAT-45"
+  },
+  {
+   "kod": "tdk-kurum-kesme",
+   "aile": "TDK",
+   "desen": "(üniversitesi|hastanesi|kliniği|kurulu|bölümü|fakültesi|bakanlığı|kurumu|derneği|örgütü)['’]",
+   "aciklama": "kurum adına gelen ek kesmeyle ayrılmış",
+   "oneri": "kesmesiz: 'Türk Dil Kurumundan'; yabancı kurum adına uygulanmaz",
+   "seviye": {
+    "post": "HATA",
+    "rapor": "HATA",
+    "ogretici": "HATA",
+    "akademik": "HATA",
+    "sesli": "HATA",
+    "telgraf": "HATA"
+   },
+   "kaynak": "TDK-K2",
+   "katalog": "KAT-45"
+  },
+  {
+   "kod": "tdk-ayrac-kesme",
+   "aile": "TDK",
+   "desen": "\\)['’][a-zçğıöşü]",
+   "aciklama": "ek ayraçtan sonra",
+   "oneri": "kesme ayraçtan önce: \"Yunus Emre'nin (1240?-1320)\"",
+   "seviye": {
+    "post": "HATA",
+    "rapor": "HATA",
+    "ogretici": "HATA",
+    "akademik": "HATA",
+    "sesli": "HATA",
+    "telgraf": "HATA"
+   },
+   "kaynak": "TDK-K8",
+   "katalog": "KAT-45"
+  },
+  {
+   "kod": "tdk-uc-nokta",
+   "aile": "TDK",
+   "desen": "\\.{4,}|(?<![.?!])\\.\\.(?!\\.)",
+   "aciklama": "iki ya da dört+ nokta",
+   "oneri": "üç nokta (...)",
+   "seviye": {
+    "post": "UYARI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "UYARI",
+    "sesli": "UYARI",
+    "telgraf": "UYARI"
+   },
+   "kaynak": "TDK-N4 (06 düzeltmesi)",
+   "katalog": "KAT-46"
+  },
+  {
+   "kod": "tdk-sira-kesme",
+   "aile": "TDK",
+   "desen": "\\d\\.['’]",
+   "aciklama": "'8.'inci' biçimi",
+   "oneri": "'8.' ya da '8'inci', ikisi birlikte değil",
+   "seviye": {
+    "post": "HATA",
+    "rapor": "HATA",
+    "ogretici": "HATA",
+    "akademik": "HATA",
+    "sesli": "HATA",
+    "telgraf": "HATA"
+   },
+   "kaynak": "TDK-S6",
+   "katalog": "KAT-42"
+  },
+  {
+   "kod": "tdk-rakamla-baslama",
+   "aile": "TDK",
+   "desen": "OZEL",
+   "aciklama": "cümle rakamla başlıyor",
+   "oneri": "'Çalışmaya 45 öğrenci alındı' gibi kur",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "UYARI",
+    "ogretici": "BILGI",
+    "akademik": "UYARI",
+    "sesli": "KAPALI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "TDK-S8",
+   "katalog": "KAT-42"
+  },
+  {
+   "kod": "alan-betik",
+   "aile": "ALAN",
+   "desen": "\\bbetik\\w*",
+   "aciklama": "'betik' (az bilinen kelime)",
+   "oneri": "'kod'",
+   "seviye": {
+    "post": "HATA",
+    "rapor": "HATA",
+    "ogretici": "HATA",
+    "akademik": "HATA",
+    "sesli": "HATA",
+    "telgraf": "UYARI"
+   },
+   "kaynak": "D13",
+   "katalog": "KAT-50"
+  },
+  {
+   "kod": "alan-on-baski",
+   "aile": "ALAN",
+   "desen": "\\bön baskı\\w*",
+   "aciklama": "'ön baskı'",
+   "oneri": "'preprint' (yerleşik terim)",
+   "seviye": {
+    "post": "HATA",
+    "rapor": "HATA",
+    "ogretici": "UYARI",
+    "akademik": "UYARI",
+    "sesli": "HATA",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "D15",
+   "katalog": "KAT-50"
+  },
+  {
+   "kod": "alan-respiratuvar",
+   "aile": "ALAN",
+   "desen": "\\brespiratuvar\\w*",
+   "aciklama": "'respiratuvar'",
+   "oneri": "'solunumsal'",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "BILGI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "sunum kuralları, D24",
+   "katalog": "KAT-50"
+  },
+  {
+   "kod": "alan-olasilik-orani",
+   "aile": "ALAN",
+   "desen": "\\bolasılık oran\\w*",
+   "aciklama": "'olasılık oranı' (odds ratio için)",
+   "oneri": "'odds ratio (OR)' / 'odds oranı'; Türkçeleştirilmez",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "UYARI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "D24",
+   "katalog": "KAT-50"
+  },
+  {
+   "kod": "alan-gaz",
+   "aile": "ALAN",
+   "desen": "(?<!kan )(?<!kan\\s)\\bgaz(ı|ın|da|de|ında|ını|ının)?\\b(?! değişim)",
+   "aciklama": "kan gazı anlamında tek başına 'gaz'",
+   "oneri": "'bu kan gazında', 'venöz kan gazı'",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "KAPALI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "D20, D22",
+   "katalog": "KAT-50"
+  },
+  {
+   "kod": "cev-sahip",
+   "aile": "CEVIRI",
+   "desen": "\\w+[ae] sahip\\w*",
+   "aciklama": "'-e sahip olmak' niteleme kullanımı",
+   "oneri": "'-li / -i olan' ya da '-de ... vardır'; somut mülkiyetse dokunma",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "UYARI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-14, L09",
+   "katalog": "KAT-20"
+  },
+  {
+   "kod": "cev-tarafindan",
+   "aile": "CEVIRI",
+   "desen": "OZEL",
+   "aciklama": "'tarafından' yığılması (metinde 3+)",
+   "oneri": "özneyi öne al ya da edilgeni bırak; bir tanesi meşru",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "BILGI",
+    "sesli": "BILGI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "CEV-03, 01 §5",
+   "katalog": "KAT-21"
+  },
+  {
+   "kod": "cev-olup",
+   "aile": "CEVIRI",
+   "desen": "\\w+(mekte|makta|miş|mış|muş|müş) olup\\b",
+   "aciklama": "'-mekte olup / -miş olup' ekleme zinciri",
+   "oneri": "cümleyi böl ya da '-ken / ve' ile bağla",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "UYARI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "SOZ-04, akademik yazım rehberi CEV",
+   "katalog": "KAT-22"
+  },
+  {
+   "kod": "cev-bir-yigini",
+   "aile": "CEVIRI",
+   "desen": "OZEL",
+   "aciklama": "aynı cümlede 3+ belirsiz 'bir'",
+   "oneri": "gereksiz 'bir'i at (deyime/birleşik fiile eklenen 'bir')",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "BILGI",
+    "sesli": "BILGI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-17, L10",
+   "katalog": "KAT-23"
+  },
+  {
+   "kod": "cev-bir-sekilde",
+   "aile": "CEVIRI",
+   "desen": "\\b\\w+ bir şekilde\\b",
+   "aciklama": "'... bir şekilde' zarf kalıbı",
+   "oneri": "'dikkatle', 'hızla' gibi tek zarf",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "UYARI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "CEV, humanizer #8",
+   "katalog": "KAT-24"
+  },
+  {
+   "kod": "cev-iyelik-zamir",
+   "aile": "CEVIRI",
+   "desen": "\\b(bizim|sizin|benim|senin) \\w+(ımız|imiz|umuz|ümüz|ınız|iniz|unuz|ünüz)\\b",
+   "aciklama": "gereksiz iyelik zamiri",
+   "oneri": "zamiri at: ek zaten söylüyor",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "BILGI",
+    "sesli": "BILGI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "CEV-04",
+   "katalog": "KAT-25"
+  },
+  {
+   "kod": "cev-digi-zinciri",
+   "aile": "CEVIRI",
+   "desen": "OZEL",
+   "aciklama": "aynı cümlede 3+ '-dığı/-diği' sıfat-fiil",
+   "oneri": "cümleyi böl",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "BILGI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-20, L19",
+   "katalog": "KAT-26"
+  },
+  {
+   "kod": "cev-mevcut",
+   "aile": "CEVIRI",
+   "desen": "\\bmevcut\\w*",
+   "aciklama": "'mevcut' (çoğu zaman 'var', 'eldeki')",
+   "oneri": "'var', 'eldeki', 'bugünkü'",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "KAPALI",
+    "sesli": "BILGI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "CEV, 01 §5",
+   "katalog": "KAT-27"
+  },
+  {
+   "kod": "cev-olarak-yigini",
+   "aile": "CEVIRI",
+   "desen": "OZEL",
+   "aciklama": "aynı cümlede 2+ 'olarak'",
+   "oneri": "birini at; 'tedavi/profilaksi olarak' meşru",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "BILGI",
+    "sesli": "BILGI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "SOZ-04",
+   "katalog": "KAT-28"
+  },
+  {
+   "kod": "yap-oncelikle",
+   "aile": "YAPI",
+   "desen": "OZEL",
+   "aciklama": "'Öncelikle' / 'Sonuç olarak' açılışı",
+   "oneri": "sil; ilişkiyi cümle kursun",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "UYARI",
+    "ogretici": "BILGI",
+    "akademik": "BILGI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-01, L01",
+   "katalog": "KAT-30"
+  },
+  {
+   "kod": "yap-arak-zinciri",
+   "aile": "YAPI",
+   "desen": "OZEL",
+   "aciklama": "aynı cümlede 2+ '-arak/-erek' zarf-fiil",
+   "oneri": "böl ya da çekimli yüklem + bağlaç ('-ip'e kaçma)",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "BILGI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-02, L01",
+   "katalog": "KAT-31"
+  },
+  {
+   "kod": "yap-bu-durum",
+   "aile": "YAPI",
+   "desen": "OZEL",
+   "aciklama": "'Bu durum / Bu da / Bu sayede' açılışı",
+   "oneri": "öncülü adıyla an ya da önceki cümleye bağla",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "BILGI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "SOZ-05, L01",
+   "katalog": "KAT-32"
+  },
+  {
+   "kod": "yap-sonuc-acilis",
+   "aile": "YAPI",
+   "desen": "OZEL",
+   "aciklama": "cümle 'Sonuç' sözcüğüyle başlıyor",
+   "oneri": "yalnız bilgi (Kocagül: konuya bağlı olabilir)",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "BILGI",
+    "sesli": "BILGI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "L01 (06: yalnız BİLGİ)",
+   "katalog": "KAT-33"
+  },
+  {
+   "kod": "yap-sira-sozu",
+   "aile": "YAPI",
+   "desen": "OZEL",
+   "aciklama": "sıra sözüyle numaralama ('İlk olarak... Son olarak')",
+   "oneri": "numaralamayı kaldır, ilişkiyi bağlaçla kur",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "UYARI",
+    "sesli": "KAPALI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "D23, STY-05",
+   "katalog": "KAT-34"
+  },
+  {
+   "kod": "yap-uzun-ort",
+   "aile": "YAPI",
+   "desen": "OZEL",
+   "aciklama": "ortalama cümle uzunluğu kip hedefinin üstünde",
+   "oneri": "uzun cümleleri böl",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "BILGI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-24 (ev varsayılanı)",
+   "katalog": "KAT-35"
+  },
+  {
+   "kod": "aka-iyelik-calisma",
+   "aile": "AKADEMIK",
+   "desen": "\\b(çalışmamız|kliniğimiz|ülkemiz|hastanemiz|merkezimiz)\\w*",
+   "aciklama": "'çalışmamızda / kliniğimizde'",
+   "oneri": "'bu çalışmada' (D24)",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "KAPALI",
+    "akademik": "UYARI",
+    "sesli": "KAPALI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "D24",
+   "katalog": "KAT-60"
+  },
+  {
+   "kod": "aka-kacinma-yigini",
+   "aile": "AKADEMIK",
+   "desen": "\\b\\w*(abil|ebil)\\w*\\s+(düşünül|söylenebil|ifade edilebil|belirtilebil)\\w*|\\bolabileceği\\s+(düşünül|söylen|öngörül|tahmin edil)\\w*|\\b(olası|muhtemel)\\w*\\s+olabil\\w*",
+   "aciklama": "kaçınma yığılması ('olabileceği düşünülebilir')",
+   "oneri": "tek kaçınma bırak: 'X olabilir' ya da 'X'i düşündürmektedir' (sıfıra indirme)",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "HATA",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-26, STY-13",
+   "katalog": "KAT-61"
+  },
+  {
+   "kod": "aka-oznesiz-yorum",
+   "aile": "AKADEMIK",
+   "desen": "\\b(olduğu|olabileceği)? ?(düşünülmektedir|sanılmaktadır|denilebilir|kabul edilmektedir)\\b",
+   "aciklama": "öznesiz yorum edilgeni",
+   "oneri": "'Bu bulgu, X'i düşündürmektedir' (USL-05)",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "KAPALI",
+    "akademik": "UYARI",
+    "sesli": "KAPALI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "akademik yazım rehberi USL-05, K-09",
+   "katalog": "KAT-62"
+  },
+  {
+   "kod": "aka-p-sifir",
+   "aile": "AKADEMIK",
+   "desen": "\\bp\\s*[=]\\s*0[,.]000\\b",
+   "aciklama": "'p=0,000'",
+   "oneri": "'p<0,001'",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "HATA",
+    "ogretici": "HATA",
+    "akademik": "HATA",
+    "sesli": "HATA",
+    "telgraf": "HATA"
+   },
+   "kaynak": "akademik yazım rehberi",
+   "katalog": "KAT-63"
+  },
+  {
+   "kod": "aka-anlamliliga-yaklasti",
+   "aile": "AKADEMIK",
+   "desen": "anlamlılığa yaklaş\\w*|sınırda anlamlı\\w*",
+   "aciklama": "'anlamlılığa yaklaştı'",
+   "oneri": "p değerini ver, 'anlamlı değil' de",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "UYARI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "akademik yazım rehberi",
+   "katalog": "KAT-63"
+  },
+  {
+   "kod": "aka-mektedir-yogunluk",
+   "aile": "AKADEMIK",
+   "desen": "OZEL",
+   "aciklama": "yüklemlerin yarısından çoğu '-mektedir/-maktadır'",
+   "oneri": "seyrelt: bir kısmını geniş zaman ya da '-dı' yap (bilgi türüne göre)",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "KAPALI",
+    "akademik": "UYARI",
+    "sesli": "KAPALI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "Ç1, YAPI-03",
+   "katalog": "KAT-64"
+  },
+  {
+   "kod": "aka-ilk-kez",
+   "aile": "AKADEMIK",
+   "desen": "\\b(ilk kez|ilk defa|benzersiz|çığır açan|eşsiz)\\b",
+   "aciklama": "promosyon dili / öncelik iddiası",
+   "oneri": "kanıtla sınırla ya da sil",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "UYARI",
+    "sesli": "BILGI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "akademik yazım rehberi ABR, STY",
+   "katalog": "KAT-65"
+  },
+  {
+   "kod": "aka-sapka",
+   "aile": "AKADEMIK",
+   "desen": "\\b(dahil|zeka)\\w*",
+   "aciklama": "akademikte TDK şapkası zorunlu",
+   "oneri": "'dâhil', 'zekâ' (akademikte TDK zorunlu)",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "KAPALI",
+    "akademik": "BILGI",
+    "sesli": "KAPALI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "03 §8",
+   "katalog": "KAT-66"
+  },
+  {
+   "kod": "aka-mistir-bolum",
+   "aile": "AKADEMIK",
+   "desen": "OZEL",
+   "aciklama": "Yöntem/Bulgular'da '-mıştır' (proje kuralı: '-dı/-ldı')",
+   "oneri": "'-dı/-ldı' (yalnız --bolum yontem|bulgular)",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "KAPALI",
+    "akademik": "UYARI",
+    "sesli": "KAPALI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "D24, K-13",
+   "katalog": "KAT-67"
+  },
+  {
+   "kod": "ses-kisaltma",
+   "aile": "SESLI",
+   "desen": "OZEL",
+   "aciklama": "okunuşu yazılmamış kısaltma",
+   "oneri": "okunuşla yaz ya da aç (references/sesli-okunus.md)",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "KAPALI",
+    "akademik": "KAPALI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-30, D5",
+   "katalog": "KAT-70"
+  },
+  {
+   "kod": "ses-parantez",
+   "aile": "SESLI",
+   "desen": "\\(",
+   "aciklama": "parantez okunmaz",
+   "oneri": "ayrı cümleye aç",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "KAPALI",
+    "akademik": "KAPALI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-30",
+   "katalog": "KAT-71"
+  },
+  {
+   "kod": "ses-egik-cizgi",
+   "aile": "SESLI",
+   "desen": "\\w/\\w",
+   "aciklama": "eğik çizgi okunmaz",
+   "oneri": "'bölü', 'ya da', 'başına' ile yaz",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "KAPALI",
+    "akademik": "KAPALI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-30",
+   "katalog": "KAT-71"
+  },
+  {
+   "kod": "ses-simge",
+   "aile": "SESLI",
+   "desen": "[≥≤<>→~±×÷%µ=]",
+   "aciklama": "simge okunmaz",
+   "oneri": "okunuşla yaz ('yüzde', 'büyük ya da eşit')",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "KAPALI",
+    "akademik": "KAPALI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-30",
+   "katalog": "KAT-71"
+  },
+  {
+   "kod": "ses-ic-not",
+   "aile": "SESLI",
+   "desen": "\\w+\\.(md|py|txt|json|pdf|html|pptx)\\b|\\bv\\d\\b|§|\\bdenetim\\w*|\\baktarım\\w*|\\bprova\\b|ölçülmedi",
+   "aciklama": "iç not sızıntısı (dosya, sürüm, denetim, prova)",
+   "oneri": "sil; konuşma metninde iş notu olmaz",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "KAPALI",
+    "akademik": "KAPALI",
+    "sesli": "HATA",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "D19, sunum kuralları",
+   "katalog": "KAT-72"
+  },
+  {
+   "kod": "ses-banka-vaka",
+   "aile": "SESLI",
+   "desen": "\\bvaka \\d{2,}",
+   "aciklama": "banka vaka numarası",
+   "oneri": "ders içi sıra: 'birinci vaka'",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "KAPALI",
+    "akademik": "KAPALI",
+    "sesli": "HATA",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "sunum kuralları",
+   "katalog": "KAT-72"
+  },
+  {
+   "kod": "ses-uzun-cumle",
+   "aile": "SESLI",
+   "desen": "OZEL",
+   "aciklama": "25+ kelimelik cümle (nefes yok)",
+   "oneri": "böl; yeni bilgi yüklemin hemen önüne",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "KAPALI",
+    "akademik": "KAPALI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-29, L14",
+   "katalog": "KAT-73"
+  },
+  {
+   "kod": "ses-birim",
+   "aile": "SESLI",
+   "desen": "\\b(mmhg|cmh2o|cmh₂o|mg|mcg|µg|ml|meq|iu|dk|sn|kg|mmol)\\b",
+   "aciklama": "birim kısaltması",
+   "oneri": "okunuşla yaz: 'milimetre cıva'",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "KAPALI",
+    "akademik": "KAPALI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-30",
+   "katalog": "KAT-70"
+  },
+  {
+   "kod": "yap-kisa-ort",
+   "aile": "YAPI",
+   "desen": "OZEL",
+   "aciklama": "ortalama cümle kip hedefinin altında (öğretici 15-20)",
+   "oneri": "ilişkili kısa cümleleri bağlaçla birleştir (D16: bağlam kuran cümle)",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "KAPALI",
+    "ogretici": "BILGI",
+    "akademik": "KAPALI",
+    "sesli": "KAPALI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "K-24, D16",
+   "katalog": "KAT-35"
+  },
+  {
+   "kod": "ai-abarti-sus",
+   "aile": "AI",
+   "desen": "\\b(yadsınamaz|inkâ?r edilemez|adeta|geniş bir yelpaze|yelpazede|dönüm noktası|kilometre taşı|kilit (bir )?rol|zengin bir doku|kalbinde yer alan|(bir|en büyük) kanıtıdır|nişanesidir|gözler önüne ser|zeminini hazırla|zahmetsizce|pürüzsüzce|titizlikle|özenle hazırlanmış|kilidini aç|tam potansiyel)",
+   "aciklama": "süslü abartı / AI sözlüğü (Tier-1)",
+   "oneri": "sil ya da somut olguyla değiştir",
+   "seviye": {
+    "post": "UYARI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "BILGI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "yucezerey/turkish-anti-ai-skill sözlüğü, proje kararı",
+   "katalog": "KAT-74"
+  },
+  {
+   "kod": "ai-soylem-anons",
+   "aile": "AI",
+   "desen": "(unutulmamalıdır ki|belirtmek gerekir ki|vurgulamak (gerekir|önemlidir)|özetlemek gerekirse|son tahlilde|mesele şu ki|işin sırrı|uzmanlar (belirtiyor|söylüyor|vurguluyor) ki|araştırmalar göstermektedir ki|pek çok gözlemciye göre|genel bir değerlendirme yapıldığında)",
+   "aciklama": "söylem anonsu / dayanaksız otorite",
+   "oneri": "anonsu sil, söyleneni doğrudan söyle; otoriteyi adıyla kaynakla",
+   "seviye": {
+    "post": "UYARI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "KAPALI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "yucezerey sözlüğü, proje kararı",
+   "katalog": "KAT-75"
+  },
+  {
+   "kod": "ai-burokratik-bag",
+   "aile": "AI",
+   "desen": "\\b(bu doğrultuda|bu çerçevede|bahsi geçen)\\b",
+   "aciklama": "bürokratik bağ",
+   "oneri": "sil ya da 'bu yüzden', 'bu' ile kur",
+   "seviye": {
+    "post": "UYARI",
+    "rapor": "UYARI",
+    "ogretici": "BILGI",
+    "akademik": "KAPALI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "yucezerey sözlüğü, proje kararı",
+   "katalog": "KAT-75"
+  },
+  {
+   "kod": "ai-pazarlama-ceviri",
+   "aile": "AI",
+   "desen": "(sinerji|paradigma değişimi|\\bproaktif\\b|bir üst seviyeye|bir sonraki aşamaya|kaldıraç olarak kullan|hepsi bir arada|tek durak|ihtiyaçlarınıza göre|başlamaya hazır mısınız|istifade et)",
+   "aciklama": "pazarlama çeviri kalıbı (SaaS)",
+   "oneri": "somut faydayı düz cümleyle yaz",
+   "seviye": {
+    "post": "UYARI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "BILGI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "yucezerey sözlüğü, proje kararı",
+   "katalog": "KAT-76"
+  },
+  {
+   "kod": "ai-negatif-paralel",
+   "aile": "AI",
+   "desen": "((sadece|yalnızca) .{1,40}? olmakla kalma|\\bmesele .{1,30}? değil,)",
+   "aciklama": "'yalnızca X olmakla kalmayıp' / 'mesele X değil' kalıbı",
+   "oneri": "olumsuz yarıyı at, ne olduğunu söyle",
+   "seviye": {
+    "post": "UYARI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "BILGI",
+    "sesli": "UYARI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "yucezerey sözlüğü, proje kararı",
+   "katalog": "KAT-76"
+  },
+  {
+   "kod": "yap-zamir-acilis",
+   "aile": "YAPI",
+   "desen": "^(ben|biz) ",
+   "aciklama": "cümle başında gereksiz kişi zamiri",
+   "oneri": "yüklem kişiyi gösteriyorsa zamiri düşür; vurgu için kalabilir",
+   "seviye": {
+    "post": "KAPALI",
+    "rapor": "BILGI",
+    "ogretici": "BILGI",
+    "akademik": "KAPALI",
+    "sesli": "KAPALI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "yucezerey sentaks rehberi, proje kararı",
+   "katalog": "KAT-77"
+  },
+  {
+   "kod": "yap-baslik-title-case",
+   "aile": "YAPI",
+   "desen": "HAM:^#{1,6}\\s+\\S.*\\s(Ve|İle|Veya|Ya Da|İçin)\\s",
+   "aciklama": "başlıkta İngilizce Title Case (bağlaç büyük)",
+   "oneri": "bağlaçları küçük yaz ya da tümce düzeni kullan",
+   "seviye": {
+    "post": "UYARI",
+    "rapor": "UYARI",
+    "ogretici": "UYARI",
+    "akademik": "UYARI",
+    "sesli": "KAPALI",
+    "telgraf": "KAPALI"
+   },
+   "kaynak": "yucezerey TDK notu, proje kararı",
+   "katalog": "KAT-78"
+  }
+ ]
+}

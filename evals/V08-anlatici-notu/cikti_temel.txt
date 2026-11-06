@@ -1,0 +1,9 @@
+# Canlı konuşmacı kartları
+
+Taslak ilk 4 aktarım denetimi bitti; tam 45 dakika, prova ve Linux testleri açık. Kanıt ayrıntıları ayrı bir hazırlık dosyasında yer alıyor.
+
+## 1
+   Hedef:  Ölçüm ile yorumu birbirinden ayırmak.   Şimdi söyle:  Bugün ölçümlerden çok, ölçümleri nasıl okuduğumuza bakacağız.   Sor / bekle:  Bir cümlenin hangi kısmı ölçüm, hangisi yorumdur? Kısa bir gönüllü yanıtı alın.   Sonuç / köprü:  Birazdan ilk olarak eksik ölçümü fark edeceğiz.   Süre:  1 dk; düşünme ve geçiş dahil, prova ölçülmedi.
+
+## 2
+   Hedef:  Yalnızca pH ile yorumun tamamlanmadığını görmek.   Şimdi söyle:  0: yalnızca pH. 1: CO2 ve sıcaklığı aç. 2: yanıtı aç. 3: gerekçeyi aç. Göl örneğindeki pH 7,9 olarak korunur; KT geri hesabıyla değiştirilmez.   Sor / bekle:  İlk karede 20 saniye: Hangi veriyi görmek istersiniz? Sonuç veya çözüm istemeyin.   Sonuç / köprü:  Nötre yakın pH, tamponun olmadığı anlamına gelmez; karbonat tamponu pH'ı nötr aralıkta tutabilir. Bu soru burada yanıtlanmış oldu: yalnızca pH yeterli değildir. Vaka 23'nin ileri çözümü bu altı slaytın dışında, Ders 1 içinde tamamlanacak; Ders 2'ye bırakılmayacak.   Süre:  2 dk; düşünme ve geçiş dahil, prova ölçülmedi.

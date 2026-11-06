@@ -1,0 +1,19 @@
+id: V07c
+kip: akademik
+bolum: yontem
+kaynak: 'sentetik; eğitim bilimleri tezi taslağı, Gereç ve Yöntem (okul adı ve tarih aralığı yer tutucu)'
+beklenen: 'neredeyse dokunulmaz: yalnız TDK şapkası (''dâhil''); Yöntem''de ''-mıştır'' raporlanır, toplu dönüştürülmez; yer tutucular korunur; ''biz'' öznesi eklenmez'
+kod:
+  koru: true
+  hata_max: 0
+  yasak_kurallar:
+  - cev-sahip
+  - cev-olup
+  - cev-bir-sekilde
+  - tdk-ve-virgul
+  - em-dash
+  - en-dash
+  - aka-kacinma-yigini
+  - ai-ifade:söz konusu
+  ritim_degismez: true
+  degisen_cumle_max: 1

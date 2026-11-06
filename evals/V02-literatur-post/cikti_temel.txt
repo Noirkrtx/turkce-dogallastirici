@@ -1,0 +1,9 @@
+Kod asistanlarına test yazdırmak, kodun doğru olduğunu her zaman garanti etmiyor. Eylül 2026'da arXiv'de yayımlanan bir çalışma, altı farklı aileden 14 açık ağırlıklı kod modelini test ediyor; araştırmacılar her modele hatalı bir fonksiyon verip birim testi yazmasını istiyor (örneğin "bu fonksiyon iki tarih arasındaki gün sayısını döndürür" açıklamasıyla) ve testin hatayı yakalayıp yakalamadığına bakıyor.
+
+Sonuçlara göre yakalama oranı modele göre yüzde 20 ile 70 arasında değişiyor ve model boyutundan çok eğitim verisine bağlı. En dikkat çekici bulgu ise şu: modele önce kodu açıklatınca hataların yüzde 60'tan fazlası yakalanıyor, doğrudan test istenince yüzde 25'in altında kalıyor. En büyük model ise doğrudan istemde hatayı hiç yakalamamış.
+
+2024'te yapılan benzer bir çalışmada modeller hatalı kodu neredeyse her zaman doğru kabul ediyordu. Düzenekler farklı olsa da yön ilginç: yeni kuşakta beceri var ama kendiliğinden devreye girmiyor.
+
+Pratik çıkarım: asistana test yazdırmadan önce kodu açıklamasını isteyin. Testlerin geçmesi tek başına kodun doğru olduğunu göstermiyor.
+
+Çalışmanın sınırları da var. Tek yazarlı bir ön baskı olan çalışma yalnızca Python fonksiyonlarını ve kısa görevleri kapsıyor.

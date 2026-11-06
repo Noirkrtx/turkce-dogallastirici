@@ -1,0 +1,70 @@
+{
+ "yontem": "maskelenmiş metin, ≥50 kelime; çeyrekler (Q1, medyan, Q3). Kaynaklar: projenin kendi metinleri (post taslakları, yanıtlar hariç; mesajla teslim edilen raporlar; okuma ve ders metinleri; akademik metin gövde paragrafları, >60 kelime; konuşmacı notları). Metinler bu repoda yok, yalnız ölçüler. 4 kelimeden kısa satırlar ölçü dışı.",
+ "kipler": {
+  "post": {
+   "n": 51,
+   "atesman_ceyrek": [
+    61.6,
+    65.9,
+    71.9
+   ],
+   "yod_ceyrek": [
+    8.9,
+    10.8,
+    12.8
+   ]
+  },
+  "rapor": {
+   "n": 11,
+   "atesman_ceyrek": [
+    81.1,
+    83.4,
+    89.7
+   ],
+   "yod_ceyrek": [
+    6.6,
+    7.8,
+    9.5
+   ]
+  },
+  "ogretici": {
+   "n": 35,
+   "atesman_ceyrek": [
+    77.1,
+    84.6,
+    87.6
+   ],
+   "yod_ceyrek": [
+    7.2,
+    8.1,
+    9.9
+   ]
+  },
+  "akademik": {
+   "n": 161,
+   "atesman_ceyrek": [
+    13.4,
+    27.0,
+    37.1
+   ],
+   "yod_ceyrek": [
+    25.1,
+    31.0,
+    37.2
+   ]
+  },
+  "sesli": {
+   "n": 5,
+   "atesman_ceyrek": [
+    84.8,
+    87.7,
+    93.7
+   ],
+   "yod_ceyrek": [
+    4.5,
+    6.3,
+    7.2
+   ]
+  }
+ }
+}

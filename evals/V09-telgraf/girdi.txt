@@ -1,0 +1,3 @@
+**Olay 4. Yavaşlayan ödeme servisi (DNS-CPU-DB).** 3 düğüm, k8s 1.29, istek ort. 120/sn → tepe 480/sn. p95 gecikme 210 ms, hata %0,4; bazal CPU %35, bellek 2,1 GB (Δ 0,3).
+Bölüm 1 (yayından sonra 3. saat, yedek düğüm yok): p95 210 → 1900 ms, CPU %92, DB bağlantısı 40 → 200: havuz doldu. Geri al + yeniden başlat: düzelmiyor. Bağlantı sızıntısı var gibi, eski istemci sürümü geri yüklenir → p95 260 ms, hata %0,5 (O).
+Bölüm 2 (6. saat, önbellek temizlenmiş): hata %12, p95 2400 ms, CPU %40 (ikisi ayrıştı: dış bağımlılık), DNS çözümleme 3 sn; yeniden başlatınca düzelmiyor → sağlayıcı kesintisi (P): yedek çözücü, sağlayıcıya bildirim. Yeniden başlatınca düzelseydi → bellek sızıntısı (S) düşünülürdü (Runbook s.12).

@@ -1,0 +1,10 @@
+id: V15
+kip: akademik
+kaynak: 'sentetik; akademik kipte meşru bağlaçların yanlış pozitif denetimi'
+beklenen: akademik kipte KAT-75 bağlaçları ve 'mozaik' gibi tıbbi terim işaretlenmez; metin değişmez
+kod:
+  ayni_olmali: true
+  yasak_kurallar:
+  - ai-soylem-anons
+  - ai-burokratik-bag
+  - ai-abarti-sus

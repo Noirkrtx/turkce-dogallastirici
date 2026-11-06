@@ -1,0 +1,3 @@
+Yeni bir kütüphaneyi denerken nereden başlamalısın? Ben önce örnek klasörüne bakıyorum, belgeleri ise sonra okuyorum. Belgeler genellikle olması gerekeni anlatırken, örnekler gerçekten çalışanı gösteriyor. Geçen hafta bir tarih ayrıştırma kütüphanesinde bunu bir kez daha gördüm. Belgelerde anlatılan bir seçenek 14 örneğin hiçbirinde yer almıyordu ve denediğimde hata verdi. Sürüm notlarını incelediğimde seçeneğin iki sürüm önce kaldırıldığı ortaya çıktı.
+
+Benim çıkarımım şu: belge ile örnek çeliştiğinde örneğe güvenmek gerekiyor. Örnekler testlerle birlikte çalıştırılıyorsa bayatlamaları çok daha zor.

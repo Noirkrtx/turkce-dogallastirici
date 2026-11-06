@@ -1,0 +1,1 @@
+Günümüzde yapay zekanın etkisi yadsınamaz. Araç adeta bir asistan gibi çalışıyor ve geniş bir yelpazede destek veriyor. Unutulmamalıdır ki her model hata yapar. Bu doğrultuda ekip yeni bir kontrol adımı ekledi. Uygulama yalnızca hızlı olmakla kalmayıp güvenli de. Ekipler arasında sinerji yaratmak istiyoruz.

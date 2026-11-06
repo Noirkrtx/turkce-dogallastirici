@@ -1,0 +1,11 @@
+id: V10
+kip: post
+kaynak: 'sentetik; kullanıcının ham geri bildirim mesajlarını taklit eden 10 satır (gerçek mesaj değildir)'
+beklenen: her mesaj ayrı denetlenir; 'AI izi' HATA'sı 0; yazım (TDK) ve alan sözlüğü bulguları ayrı listede
+kod:
+  yalniz_tespit: true
+  satir_satir: true
+  ai_hata_max: 0
+  yazim_aileleri:
+  - tdk-
+  - alan-

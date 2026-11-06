@@ -1,0 +1,20 @@
+id: V07f
+kip: akademik
+bolum: sonuc
+kaynak: 'sentetik; eğitim bilimleri tezi taslağı, Sonuç'
+beklenen: 'değişmez ya da en az değişir: ''-malıdır'' önerisi Sonuç bölümünde meşru, ''ihtiyatla yorumlanmalıdır'' temkini
+  kalır'
+kod:
+  koru: true
+  hata_max: 0
+  yasak_kurallar:
+  - cev-sahip
+  - cev-olup
+  - cev-bir-sekilde
+  - tdk-ve-virgul
+  - em-dash
+  - en-dash
+  - aka-kacinma-yigini
+  - ai-ifade:söz konusu
+  ritim_degismez: true
+  degisen_cumle_max: 1

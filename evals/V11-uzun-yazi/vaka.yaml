@@ -1,0 +1,11 @@
+id: V11
+kip: post
+tur: uzun
+kaynak: 'sentetik; bilim tarihi uzun yazı taslağı, olgular genel tarih bilgisi (1842 çeviri, 1843 notlar)'
+beklenen: '''-mış'' anlatı kipi korunur, -maktadır ve ''Sonuç olarak'' gider, 1842/1843 korunur'
+kod:
+  koru: true
+  hata_max: 0
+  puan_min: 85
+  girdide_bulunmali:
+  - mektedir

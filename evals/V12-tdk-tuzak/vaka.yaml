@@ -1,0 +1,20 @@
+id: V12
+kip: hepsi
+kipler:
+- post
+- rapor
+- ogretici
+- akademik
+- sesli
+- telgraf
+kaynak: 'sentetik; TDK yanlış pozitif tuzakları'
+beklenen: hiçbir kipte TDK yanlış pozitif HATA'sı yok; '1,500'e dokunulmaz, not düşülür; yeniden yazım metni değiştirmez
+kod:
+  koru: true
+  koru_kip: rapor
+  tuzak_hata_max: 0
+  ayni_olmali: true
+  girdide_bulunmali:
+  - tdk-belirsiz-sayi
+  girdide_bulunmali_kip: rapor
+not_: '''bir takım kurduk'' TDK-B7 gereği UYARI alır (06: sayı + ad doğru; belirsizlik anlamında ''birtakım''); HATA değil.'

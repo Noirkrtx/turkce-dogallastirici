@@ -1,0 +1,19 @@
+id: V07a
+kip: akademik
+bolum: giris
+kaynak: 'sentetik; eğitim bilimleri tezi taslağı, Giriş (kurgu çalışma: ortaokulda okuma kaygısı ve akıcılık)'
+beklenen: '''-e sahip'' ve ''-miş olup'' düzelir; -mektedir, edilgen, temkin (''potansiyel'' → ''-abilir'') korunur; atıf yerleri ve sayılar aynen'
+kod:
+  koru: true
+  hata_max: 0
+  yasak_kurallar:
+  - cev-sahip
+  - cev-olup
+  - cev-bir-sekilde
+  - tdk-ve-virgul
+  - em-dash
+  - en-dash
+  - aka-kacinma-yigini
+  - ai-ifade:söz konusu
+  ritim_degismez: true
+olgu_notu: null
